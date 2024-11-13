@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-gray-900 text-center p-4">
-        <p>Designed with ❤️ by [Neved]</p>
+        <p>Designed by Pál Martin</p>
       </div>
     </footer>
   );

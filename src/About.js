@@ -85,7 +85,7 @@ const About = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.4 }}
+            transition={{ duration: 1, delay: 0.2 }}
           >
             <FaHandshake className="text-primary text-4xl mb-4" />
             <h3 className="text-2xl font-semibold mb-2">Küldetésünk</h3>
@@ -100,7 +100,7 @@ const About = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.6 }}
+            transition={{ duration: 1, delay: 0.2 }}
           >
             <FaGlobe className="text-primary text-4xl mb-4" />
             <h3 className="text-2xl font-semibold mb-2">Víziónk</h3>
@@ -117,7 +117,7 @@ const About = () => {
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.8 }}
+            transition={{ duration: 1, delay: 0.2 }}
           >
             Csapatunk
           </motion.h3>
@@ -129,8 +129,8 @@ const About = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 1, delay: 0.8 }}
-            >
+              transition={{ duration: 1, delay: 0.2 }}
+              >
               <img
                 src="/anon.jfif" // Győződj meg róla, hogy a kép a 'public/assets' mappában van
                 alt="Kasi Péter"
@@ -148,8 +148,8 @@ const About = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 1, delay: 0.8 }}
-            >
+              transition={{ duration: 1, delay: 0.2 }}
+              >
               <img
                 src="/anon.jfif" // Győződj meg róla, hogy a kép a 'public/assets' mappában van
                 alt="Kasi Róbert"
@@ -167,8 +167,8 @@ const About = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 1, delay: 0.8 }}
-            >
+              transition={{ duration: 1, delay: 0.2 }}
+              >
               <img
                 src="/anon.jfif" // Győződj meg róla, hogy a kép a 'public/assets' mappában van
                 alt="Nagy Anna"
@@ -189,7 +189,7 @@ const About = () => {
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.8 }}
+            transition={{ duration: 1, delay: 0.2 }}
             >
             Szolgáltatásaink
           </motion.h3>
@@ -201,8 +201,8 @@ const About = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 1, delay: 0.8 }}
-            >
+              transition={{ duration: 1, delay: 0.2 }}
+              >
               <FaTruck className="text-primary text-4xl mb-4 mx-auto" />
               <h4 className="text-xl font-semibold mb-2">Túlméretes Fuvarozás</h4>
               <p className="text-gray-700">
@@ -216,8 +216,8 @@ const About = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 1, delay: 0.8 }}
-            >
+              transition={{ duration: 1, delay: 0.2 }}
+              >
               <FaHandshake className="text-primary text-4xl mb-4 mx-auto" />
               <h4 className="text-xl font-semibold mb-2">Ügyfélszolgálat</h4>
               <p className="text-gray-700">
@@ -231,8 +231,8 @@ const About = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 1, delay: 0.8 }}
-            >
+              transition={{ duration: 1, delay: 0.2 }}
+              >
               <FaUsers className="text-primary text-4xl mb-4 mx-auto" />
               <h4 className="text-xl font-semibold mb-2">Csapatunk</h4>
               <p className="text-gray-700">
@@ -246,8 +246,8 @@ const About = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 1, delay: 0.8 }}
-            >
+              transition={{ duration: 1, delay: 0.2 }}
+              >
               <FaGlobe className="text-primary text-4xl mb-4 mx-auto" />
               <h4 className="text-xl font-semibold mb-2">Nemzetközi Szállítás</h4>
               <p className="text-gray-700">

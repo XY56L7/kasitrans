@@ -126,7 +126,7 @@ const Contact = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.4 }}
+              transition={{ duration: 0.4, delay: 0.4 }}
             >
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2465.9398381287793!2d19.040236315728895!3d46.42784567917678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4742a93f1b3c9e0f%3A0x5c1c8f8d7e9c3a6c!2sIpari%20Park%205257%2F8%20Hrsz.%2C%206300%20Kalocsa!5e0!3m2!1shu!2shu!4v1600000000000!5m2!1shu!2shu"

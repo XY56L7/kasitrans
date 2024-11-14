@@ -148,7 +148,7 @@ const About = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 1, delay: 1.0 }}
+              transition={{ duration: 1, delay: 0.8 }}
             >
               <img
                 src="/anon.jfif" // Győződj meg róla, hogy a kép a 'public/assets' mappában van
@@ -167,7 +167,7 @@ const About = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 1, delay: 1.2 }}
+              transition={{ duration: 1, delay: 0.8 }}
             >
               <img
                 src="/anon.jfif" // Győződj meg róla, hogy a kép a 'public/assets' mappában van
@@ -189,8 +189,8 @@ const About = () => {
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1, delay: 1.4 }}
-          >
+            transition={{ duration: 1, delay: 0.8 }}
+            >
             Szolgáltatásaink
           </motion.h3>
 
@@ -201,7 +201,7 @@ const About = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 1, delay: 1.6 }}
+              transition={{ duration: 1, delay: 0.8 }}
             >
               <FaTruck className="text-primary text-4xl mb-4 mx-auto" />
               <h4 className="text-xl font-semibold mb-2">Túlméretes Fuvarozás</h4>
@@ -216,7 +216,7 @@ const About = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 1, delay: 1.8 }}
+              transition={{ duration: 1, delay: 0.8 }}
             >
               <FaHandshake className="text-primary text-4xl mb-4 mx-auto" />
               <h4 className="text-xl font-semibold mb-2">Ügyfélszolgálat</h4>
@@ -231,7 +231,7 @@ const About = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 1, delay: 2.0 }}
+              transition={{ duration: 1, delay: 0.8 }}
             >
               <FaUsers className="text-primary text-4xl mb-4 mx-auto" />
               <h4 className="text-xl font-semibold mb-2">Csapatunk</h4>
@@ -246,7 +246,7 @@ const About = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 1, delay: 2.2 }}
+              transition={{ duration: 1, delay: 0.8 }}
             >
               <FaGlobe className="text-primary text-4xl mb-4 mx-auto" />
               <h4 className="text-xl font-semibold mb-2">Nemzetközi Szállítás</h4>

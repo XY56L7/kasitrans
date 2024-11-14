@@ -6,13 +6,13 @@ const testimonials = [
     name: 'János Kovács',
     position: 'Vállalkozó',
     feedback: 'A KasiTrans megbízható és gyors fuvarozási szolgáltatásaival kiváló partnerei voltak vállalkozásomnak. Nagyon elégedett vagyok a szolgáltatással!',
-    avatar: '/assets/testimonial1.jpg',
+    avatar: '/janos.jpg',
   },
   {
     name: 'Éva Szabó',
     position: 'Logisztikai Menedzser',
     feedback: 'A csapat professzionális és segítőkész. Minden alkalommal pontosan és biztonságosan szállították az árut.',
-    avatar: '/assets/testimonial2.jpg',
+    avatar: '/eva.png',
   },
   // További vélemények...
 ];

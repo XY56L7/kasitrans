@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'; // Frissített importok
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +25,7 @@ const Header = () => {
           </div>
         </nav>
       </div>
-      {/* Mobil Menü */}
+      {}
       {isOpen && (
         <div className="md:hidden bg-primary text-white">
           <Link to="/" className="block px-4 py-2 hover:bg-secondary">Főoldal</Link>

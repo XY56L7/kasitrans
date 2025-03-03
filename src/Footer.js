@@ -1,4 +1,3 @@
-// src/components/Footer/Footer.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
@@ -7,9 +6,9 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-gray-300 mt-12">
       <div className="container mx-auto p-8">
-        {/* Fő Tartalom: Kapcsolat, Hasznos Linkek, Kövess Minket */}
+        {}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
-          {/* Kapcsolatfelvételi Adatok */}
+          {}
           <div className="flex flex-col">
             <h3 className="text-xl font-bold text-white mb-4">Kapcsolat</h3>
             <p className="mb-2">Kalocsa, Ipari park 5257/8 hrsz., 6300</p>
@@ -30,7 +29,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Hasznos Linkek */}
+          {}
           <div className="flex flex-col">
             <h3 className="text-xl font-bold text-white mb-4">Hasznos Linkek</h3>
             <ul>
@@ -47,7 +46,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Kövess Minket */}
+          {}
           <div className="flex flex-col">
             <h3 className="text-xl font-bold text-white mb-4">Kövess Minket</h3>
             <div className="flex space-x-4">
@@ -82,7 +81,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Alul Rész: Designer Credit */}
+        {}
         <div className="mt-12 border-t border-gray-700 pt-8 text-center text-gray-500">
           <p>© {new Date().getFullYear()} Minden jog fenntartva.</p>
           <p>Designed by Pál Martin</p>

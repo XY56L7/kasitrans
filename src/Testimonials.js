@@ -14,7 +14,6 @@ const testimonials = [
     feedback: 'A csapat professzionális és segítőkész. Minden alkalommal pontosan és biztonságosan szállították az árut.',
     avatar: '/eva.png',
   },
-  // További vélemények...
 ];
 
 const Testimonials = () => {

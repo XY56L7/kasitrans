@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Egyedi stílusok */
 body {
   @apply font-sans bg-gray-50;
 }

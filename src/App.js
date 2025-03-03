@@ -18,7 +18,7 @@ function App() {
             <Route path="/szolgaltatasok" element={<ServicesPage />} />
             <Route path="/rolunk" element={<About />} />
             <Route path="/kapcsolat" element={<ContactPage />} />
-            {/* További route-ok */}
+            {}
           </Routes>
         </main>
         <Footer />

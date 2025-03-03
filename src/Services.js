@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaTruck, FaGlobe, FaWarehouse } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import { TruckIcon, GlobeAltIcon, BuildingOfficeIcon } from '@heroicons/react/24/outline'; // V2 ikonok
+import { TruckIcon, GlobeAltIcon, BuildingOfficeIcon } from '@heroicons/react/24/outline';
 
 const services = [
   {
@@ -19,7 +19,6 @@ const services = [
     description: 'Modern raktárainkban biztonságosan tárolhatod árusítmányodat.',
     icon: <BuildingOfficeIcon className="text-secondary w-12 h-12 mb-4" />,
   },
-  // További szolgáltatások...
 ];
 
 const Services = () => {

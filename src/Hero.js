@@ -1,4 +1,3 @@
-// src/components/Hero/Hero.js
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -17,7 +16,7 @@ const Hero = () => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === backgroundImages.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000); // 1000 ms = 1 másodperc
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [backgroundImages.length]);
@@ -30,10 +29,10 @@ const Hero = () => {
         transition: 'background-image 0.5s ease-in-out',
       }}
     >
-      {/* Fekete átmenet */}
+      {}
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
-      {/* Tartalom */}
+      {}
       <div className="flex items-center justify-center h-full relative z-10">
         <motion.div
           className="text-center text-white px-4"

@@ -1,4 +1,3 @@
-// src/components/Contact.js
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaUser, FaEnvelope, FaCommentDots } from 'react-icons/fa';
@@ -16,7 +15,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Itt kezelheted a form beküldését (pl. API hívás)
     console.log(form);
     alert('Üzeneted elküldve!');
     setForm({ nev: '', email: '', uzenet: '' });
@@ -25,7 +23,7 @@ const Contact = () => {
   return (
     <section className="py-20 bg-gray-100">
       <div className="container mx-auto px-4">
-        {/* Cím */}
+        {}
         <motion.h2
           className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary"
           initial={{ opacity: 0, y: 50 }}
@@ -36,7 +34,7 @@ const Contact = () => {
           Kapcsolat
         </motion.h2>
 
-        {/* Tartalom Flexbox - Két oszlop */}
+        {}
         <motion.div
           className="flex flex-col lg:flex-row items-stretch lg:space-x-8"
           initial={{ opacity: 0, y: 50 }}
@@ -44,12 +42,12 @@ const Contact = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          {/* Kapcsolatfelvételi Űrlap */}
+          {}
           <form
             className="w-full lg:w-1/2 bg-white p-8 rounded-lg shadow-lg flex flex-col"
             onSubmit={handleSubmit}
           >
-            {/* Név */}
+            {}
             <div className="mb-4">
               <label htmlFor="nev" className="block text-gray-700 mb-2">
                 Név
@@ -69,7 +67,7 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Email */}
+            {}
             <div className="mb-4">
               <label htmlFor="email" className="block text-gray-700 mb-2">
                 Email
@@ -89,7 +87,7 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Üzenet */}
+            {}
             <div className="mb-6">
               <label htmlFor="uzenet" className="block text-gray-700 mb-2">
                 Üzenet
@@ -109,7 +107,7 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Küldés Gomb */}
+            {}
             <button
               type="submit"
               className="w-full bg-primary hover:bg-secondary text-white font-semibold py-3 rounded transition transform hover:scale-105"
@@ -119,10 +117,10 @@ const Contact = () => {
             </button>
           </form>
 
-          {/* Térkép */}
+          {}
           <div className="w-full lg:w-1/2 mt-12 lg:mt-0">
             <motion.div
-              className="rounded-lg shadow-lg overflow-hidden h-80 lg:h-full" // Mobilon h-80, nagy képernyőkön h-full
+              className="rounded-lg shadow-lg overflow-hidden h-80 lg:h-full"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

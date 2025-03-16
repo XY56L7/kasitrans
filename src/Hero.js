@@ -3,57 +3,68 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
-  const backgroundImages = [
-    '/about1.jpg',
-    '/about2.jpg',
-    '/about3.jpg',
+  const slides = [
+    {
+      image: '/about1.jpg',
+      title: 'Üdvözöljük a KasiTransnál!',
+      subtitle: 'Megbízható és gyors fuvarozási szolgáltatások.',
+    },
+    {
+      image: '/about2.jpg',
+      title: 'Túlméretes Szállítás',
+      subtitle: 'Speciális járművekkel Európa-szerte.',
+    },
+    {
+      image: '/about3.jpg',
+      title: 'Modern Géppark',
+      subtitle: 'Folyamatosan bővülő és karbantartott flottánk.',
+    },
   ];
 
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) =>
-        prevIndex === backgroundImages.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 3000);
-
+      setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+    }, 5000);
     return () => clearInterval(interval);
-  }, [backgroundImages.length]);
+  }, [slides.length]);
 
   return (
-    <section
-      className="bg-cover bg-center h-screen relative"
-      style={{
-        backgroundImage: `url(${backgroundImages[currentImageIndex]})`,
-        transition: 'background-image 0.5s ease-in-out',
-      }}
-    >
-      {}
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-
-      {}
-      <div className="flex items-center justify-center h-full relative z-10">
+    <section className="relative h-screen overflow-hidden">
+      {slides.map((slide, index) => (
         <motion.div
-          className="text-center text-white px-4"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
+          key={index}
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${slide.image})` }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: index === currentSlide ? 1 : 0 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="text-5xl md:text-6xl font-display font-bold mb-4">
-            Üdvözöljük a KasiTransnál!
-          </h1>
-          <p className="text-xl md:text-2xl mb-6">
-            Megbízható és gyors fuvarozási szolgáltatások.
-          </p>
-          <Link
-            to="/kapcsolat"
-            className="bg-secondary hover:bg-accent text-white font-semibold py-3 px-6 rounded-full transition"
-          >
-            Vedd fel velünk a kapcsolatot
-          </Link>
+          <div className="absolute inset-0 bg-gradient-radial"></div>
+          <div className="flex items-center justify-center h-full relative z-10">
+            <motion.div
+              className="text-center text-white px-6"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.5 }}
+            >
+              <h1 className="text-4xl md:text-6xl font-display font-extrabold mb-4 drop-shadow-lg">
+                {slide.title}
+              </h1>
+              <p className="text-lg md:text-2xl mb-8 drop-shadow-md">
+                {slide.subtitle}
+              </p>
+              <Link
+                to="/kapcsolat"
+                className="inline-block bg-secondary hover:bg-accent text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
+              >
+                Kapcsolatfelvétel
+              </Link>
+            </motion.div>
+          </div>
         </motion.div>
-      </div>
+      ))}
     </section>
   );
 };
